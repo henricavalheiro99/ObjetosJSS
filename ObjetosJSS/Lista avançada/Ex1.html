@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos compostos</title>
+</head>
+
+<body>
+    <script>
+        const Empresa = {
+            nome: "SimasTurbo",
+            setor: "Veículos",
+            funcionarios: [
+                Pessoa1 = {
+                    nome: "Henri",
+                    idade: 16,
+                    email: "aaaaaaaaaa",
+                    cargo: "Dono"
+                },
+                Pessoa2 = {
+                    nome: "Miguel",
+                    idade: 3,
+                    email: "bbbbbbbbbb",
+                    cargo: "Admininastro de propaganda"
+                },
+                Pessoa3 = {
+                    nome: "Murilovers",
+                    idade: 51,
+                    email: "ccccccccccc",
+                    cargo: "Véio bêbado",
+                },
+                Pessoa4 = {
+                    nome: "Vó",
+                    idade: 2000000000000000,
+                    email: "ddddddddddd",
+                    cargo: "Inútil"
+                }
+            ],
+
+            adicionar (a, b, c, d) {
+                const ProximaPessoa = {
+                    nome: a,
+                    idade: b,
+                    email: c, 
+                    cargo: d
+                }
+                this.funcionarios.push(ProximaPessoa)
+            },
+
+            remover (a) {
+                for (item in this.funcionarios){
+                    if (a == this.funcionarios[item].nome){
+                        this.funcionarios.splice(item, 1)
+                    } 
+                }
+            },
+
+            listar () {
+                for (chaves of this.funcionarios){
+                    console.log(`Nome: ${chaves.nome} \n Idade: ${chaves.idade} \n Email: ${chaves.email} \n Cargo: ${chaves.cargo}`) 
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

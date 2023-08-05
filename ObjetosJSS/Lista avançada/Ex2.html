@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessando Propriedades Avançado</title>
+</head>
+<body>
+    <script>
+        const biblioteca = {
+            livro: 
+            [
+                livro1 = {
+                   titulo: "Odeio um certo bucha",
+                   autor: "Ana Loira",
+                   ano: 2023 
+                },
+
+                livro2 = {
+                    titulo: "amando sem parar",
+                    autor: "Ana Loira",
+                    ano: 2015
+                },
+
+                livro3 ={
+                    titulo: "como eu criei Adão e Eva",
+                    autor: "Ana Loira",
+                    ano: -20000000
+                },
+
+                livro4 = {
+                    titulo: "Meu netinho querido",
+                    autor: "Ana Loira",
+                    ano: 2023
+                }
+            ],
+
+            Autores2016 () {
+                lista = []
+                for (item of this.livro){
+                    if (item.ano > 2015) {
+                        lista.push(item.autor)
+                    }
+                }
+
+                return lista
+            }
+        }
+    </script>
+</body>
+</html>
