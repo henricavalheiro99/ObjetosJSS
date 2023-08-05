@@ -7,7 +7,101 @@
 </head>
 <body>
     <script>
+        // Exs da Pessoa
+        // const Pessoa = {
+        //     nome: "Henri",
+        //     idade: 16,
+        //     email: "hcavalheiroavanco@gmail.com",
+        //     endereco: "Birigui",
+        //     cumprimentar () {
+        //         return "Olá, meu nome é: " + this.nome
+        //     }
+        // }
+
+        // function RecebeObjeto (a) {
+        //     for (chaves in a){
+        //         console.log(chaves + " = " + a[chaves])
+        //     }
+        // }
+
+        // console.log(RecebeObjeto(Pessoa))
+
+
+
+        //Exs do livro 
+        // const livro = {
+        //     titulo: "One piece",
+        //     autor: "Eichiro Oda",
+        //     ano: 1997
+        // }
+        // console.log(livro.autor)
+
+
+
+
+        // Exs do carro
+        // const carro = {
+        //     marca: "Fiat",
+        //     modelo: "Uno de escada",
+        //     proprietario: {
+        //         nome: "Miguel",
+        //         idade: 16
+        //     }
+        // }
+
+        // function Criando_Chave_Valor (a, b, c) {
+        //     a[b] = c
+        //     return a
+        // }
+
+        // console.log(Criando_Chave_Valor(carro, "ano", 1990))
+
+        // function Testando (a, b) {
+        //     return b in a
+        // }
+
+        // console.log(Testando(carro, "proprietario"))
+
+        // console.log(carro["proprietario"]["idade"])
+
+
+
+        // Ex da lista de objetos
+        lista = []
+        const Pessoa1 = {
+            nome: "Henri",
+            idade: 16
+        }
+        const Pessoa2 = {
+            nome: "Miguel",
+            idade: 3
+        }
+        const Pessoa3 = {
+            nome: "Murilovers",
+            idade: 51
+        }
+        const Pessoa4 = {
+            nome: "Vó",
+            idade: 2000000000000000
+        }
+
+        lista.push(Pessoa1, Pessoa2, Pessoa3, Pessoa4)
+
+        function Mais_Velho (a) {
+            var maior_idade = 0
+            var idoso = ""
+            for (itens of a){
+                if (itens["idade"] > maior_idade){
+                    maior_idade = itens["idade"]
+                    idoso = itens["nome"]
+                }
+            }
+            return idoso
+        }
+
+
         
+
     </script>
 </body>
 </html>
